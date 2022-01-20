@@ -1,0 +1,106 @@
+body {
+    background: #2c2c2c
+}
+
+aside {
+    float: left;
+    background: #181818;
+    width: 20%;
+    padding: 2.5%;
+    height: 100vh;
+    color: #fff;
+    border-right: 5px solid #4d4d4d;
+}
+
+aside img {
+    width: 200px;
+    float: left;
+}
+
+aside .logo {
+    font-size: 40px;
+    margin-left: 10px;
+    font-weight: bold;
+    position: relative;
+    top: -5px;
+}
+
+aside h3{
+    margin-top: 50px;
+    font-size: 28px;
+}
+
+aside nav { list-style: none; }
+
+aside a {
+    float: left;
+    color: #fff;
+    display: block;
+    margin-top: 20px;
+    transition: transform .6 ease;
+}
+
+aside a:hover {
+    color: #eb5959;
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
+main .features {
+    float: left;
+    color: #fff;
+    margin-top: 100px;
+    text-align: center;
+    width: 75%;
+}
+
+main .features h1 { font-size: 50px; }
+main .features p { max-weight: 400px; margin: 5px auto; }
+
+form {
+    float: right;
+    margin-left: 32%;
+    width: 500px;
+    margin-top: 50px;
+}
+
+.my_form {
+    float: right;
+}
+
+.my_form1 {
+    margin-left: 60%;
+}
+
+.btn {
+    color: #fff;
+}
+
+a.buttons {
+  width: 150px;
+  height: 30px;
+  text-decoration: none;
+  padding-top: 9px;
+  color: #a675b3;
+  text-align: center;
+  line-height: 20px;
+  display: block;
+  margin: 20px auto;
+  font: normal 17px arial;
+}
+
+a.buttons:not(.active) {
+  box-shadow: inset 0 1px 1px rgba(111, 55, 125, 0.8), inset 0 -1px 0px rgba(63, 59, 113, 0.2), 0 9px 16px 0 rgba(0, 0, 0, 0.3), 0 4px 3px 0 rgba(0, 0, 0, 0.3), 0 0 0 1px #150a1e;
+  background-image: linear-gradient(#3b2751, #271739);
+  text-shadow: 0 0 21px rgba(223, 206, 228, 0.5), 0 -1px 0 #311d47;
+}
+
+a.buttons:not(.active):hover,
+a.buttons:not(.active):focus {
+  transition: color 200ms linear, text-shadow 500ms linear;
+  color: #fff;
+  text-shadow: 0 0 21px rgba(223, 206, 228, 0.5), 0 0 10px rgba(223, 206, 228, 0.4), 0 0 2px #2a153c;
+}
+a.buttons:not(:hover) {
+    transition: 0.6s;
+}

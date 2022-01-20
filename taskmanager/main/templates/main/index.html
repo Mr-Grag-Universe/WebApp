@@ -1,0 +1,31 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>{{ title }}</h1>
+        <p></p>
+        <p>Приветствем Вас на нашем сайте. Здесь вы можете узнать нашу оценку Вашего авто.
+            <br>Начните, перейдя по ссылке в блоке навигации</p>
+        <a class="nav-link" href="{% url 'user_enter' %}">
+            <button class="button button-warning">Предсказать сейчас</button>
+        </a>
+    </div>
+
+<!--{% include 'main/test.html' %}
+{% include 'main/test.html' %}
+{% include 'main/test.html' %}
+    {% if tasks %}
+        {% for el in tasks %}
+            <div class="alert alert-warning mt-2">
+                <h3>{{ el.title }}</h3>
+                <p>{{ el.task }}</p>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>У нас нет записей</p>
+    {% endif %}-->
+{% endblock %}

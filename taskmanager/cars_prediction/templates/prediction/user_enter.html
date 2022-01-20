@@ -1,0 +1,31 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+Ввод данных о машине
+{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>Введите ваши данные</h1>
+        <form method="post" class=".my_form">
+            {% csrf_token %}
+            <p class="#my_form">Марка машины: {{ form.mark }}</p><br>
+            <p class="#my_form">Год выпуска автомобиля: {{ form.year }}<br></p>
+            <p class="#my_form">Пробег: {{ form.mileage }}</p><br>
+            <!--p>Налог: {{ form.rent }}</p><br-->
+            <p class="my_form1">У Вас механическая коробка: {{ form.box }}</p><br>
+            <p class="my_form1">Полный привод: {{ form.drive }}</p><br>
+            <p>Положение руля слева: {{ form.rul }}</p><br>
+            <p>Требуестя ремонт: {{ form.condition }}</p><br>
+            <p class="#my_form">Количество владельцев: {{ form.owners }}</p><br>
+            <p>ПТС: {{ form.PTS }}</p><br>
+            <!--p>Растаможен: {{ form.tamozna }}</p><br-->
+            <!--p>Обмен: {{ form.barter }}</p><br-->
+            <p class="#my_form">Объём двигателя: {{ form.V }}</p><br>
+            <p class="#my_form">Мощность (в л.с.): {{ form.P }}</p><br>
+            <p>Топливо - бензин: {{ form.toplivo }}</p><br>
+            <!--p>Время гарантии (0 если нет): {{ form.garant }}</p><br-->
+            <button type="submit" name="" class="buttons">Предсказать цену</button>
+        </form>
+    </div>
+{% endblock %}
